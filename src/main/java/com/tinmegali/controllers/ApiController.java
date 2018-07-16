@@ -47,7 +47,7 @@ public class ApiController {
         }
     }
 
-    @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasRole('ADMIN')") 
     @DeleteMapping(path = "/api/user/remove", produces = "application/json")
     public ResponseEntity<?> removeUser() {
         try {
